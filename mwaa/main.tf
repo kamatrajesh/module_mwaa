@@ -2,7 +2,7 @@ resource "aws_mwaa_environment" "example" {
   dag_s3_path        = "dag/"
   requirements_s3_path  ="requirement.txt"
   execution_role_arn = var.execution_role_arn
-  airflow_version =2.2.2
+  airflow_version ="2.2.2"
   
 
   logging_configuration {
