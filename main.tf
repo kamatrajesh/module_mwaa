@@ -1,5 +1,5 @@
 module "dev_mwaa" {
-  source = "../module/mwaa"
+  source = "./module/mwaa"
   name="raj1"
  security_group_ids=["sg-0068dfad55ea04930"]
  subnet_ids=["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
