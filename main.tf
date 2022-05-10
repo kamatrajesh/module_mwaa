@@ -1,12 +1,28 @@
 module "dev_mwaa" {
-  source = "./mwaa"
-  name=var.name
- security_group_ids=var.security_group_ids
- subnet_ids=var.subnet_ids
- execution_role_arn=var.execution_role_arn
- source_bucket_arn=var.source_bucket_arn
- resource_tags = var.resource_tags
+  name="raj12"
+security_group_ids=["sg-0068dfad55ea04930"]
+subnet_ids=["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
+execution_role_arn="arn:aws:iam::863309687429:role/mwaa-first-execution-role"
+source_bucket_arn="arn:aws:s3:::airflow197805"
+resource_tags = {
+  Name      = "raj123",
+  environment = "dev",
+  
+}
   
 }
   
  
+module "dev_mwaa1" {
+  name="raj122"
+security_group_ids=["sg-0068dfad55ea04930"]
+subnet_ids=["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
+execution_role_arn="arn:aws:iam::863309687429:role/mwaa-first-execution-role"
+source_bucket_arn="arn:aws:s3:::airflow197805"
+resource_tags = {
+  Name      = "raj1233",
+  environment = "dev",
+  
+}
+  
+}
