@@ -1,4 +1,5 @@
 module "dev_mwaa" {
+  source="./mwaa"
   name="raj12"
 security_group_ids=["sg-0068dfad55ea04930"]
 subnet_ids=["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
@@ -14,6 +15,7 @@ resource_tags = {
   
  
 module "dev_mwaa1" {
+  source="./mwaa"
   name="raj122"
 security_group_ids=["sg-0068dfad55ea04930"]
 subnet_ids=["subnet-083f60308cc643012","subnet-05244b86b15d97348"]
